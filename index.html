@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<div>
+    <!-- desktop based navigation -->
+    <nav id="desktop-nav">
+        <div class="logo"><a href="index.html">Jane Doe</a></div>
+        <ul class = "nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#time-line">Education</a></li>
+            <li><a href="#time-line">Experience</a></li>
+            <li><a href="#skillset">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><img src="./assets/dark_theme_enabler/moon.png" alt="dark-mode" id="theme-icon"></li>
+        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jane Doe</div>
+        <img src="./assets/dark_theme_enabler/moon.png" alt="dark-mode" id="theme-icon1">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="togglemenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="togglemenu()">About</a></li>
+                    <li><a href="#time-line" onclick="togglemenu()">Education</a></li>
+                    <li><a href="#time-line" onclick="togglemenu()">Experience</a></li>
+                    <li><a href="#skillset" onclick="togglemenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+                </div>
+            </div>
+    </nav>
+
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="profile-container">
+            <div class="section__pic-container">
+                <img src="./assets/MyProfile.png" alt="Profile Picture" class="profile-pic">
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello I'm</p>
+                <h1 class="title">Jane Doe!</h1>
+                <p class="section__text__p2">And I am a <span class="auto-type"></span></p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/JaneDoeResume.jpg')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" id="linkedin" onclick="location.href='https://www.linkedin.com/'">
+                    <img src="./assets/github.png" alt="GitHub Profile" class="icon" id="github" onclick="location.href='https://github.com/'">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container">
+            <p class="section__text__p1">Get to know more</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/AboutMe.JPG" 
+                    alt="photo with Himalaya" 
+                    class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="experience icon" class="icon">
+                            <h3>Industrial Experience</h3>
+                            <p><b>3+</b> years<br/>Web Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/Edu.jpg" alt="Education icon" class="icon">
+                            <h3>Education</h3>
+                            <p><b>M.S.</b> Master's Major</p>
+                            <p><b>B.E.</b> Bahcelor's Major</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, architecto consequuntur eaque cum accusamus earum atque dignissimos? Laboriosam iusto dicta quam eveniet distinctio? Inventore consequuntur ex natus sed fugiat <span class="highlight">magni?</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Experience Timeline -->
+<p id="time-line" class="section__text__p1">My</p>
+<h1 class="title">Education & Experience</h1>
+    <div class="timeline" >
+        <div class="container right-container">
+            <img src="./assets/timeline-logo.jpg" alt="UT_Austin" id="UTlogo">
+            <div class="text-box">
+                <h2>Hogwarts School</h2>
+                <small>2020-2023</small>
+                <p>Master's of Gryffindor</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <img src="./assets/timeline-logo.jpg" alt="TCS" id="tcslogo1" >
+            <div class="text-box">
+                <h2>Ministry of Magic</h2>
+                <small>Jan 2022 - Aug 2023</small>
+                <p>Witches of Macbeth</p>
+                    <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <img src="./assets/timeline-logo.jpg" alt="TCS" id = "tcslogo2">
+            <div class="text-box">
+                <h2>Hogwarts School</h2>
+                <small>Mar 2020 - Jan 2022</small>
+                <p>Muggle Studies</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container left-container">
+            <img src="./assets/timeline-logo.jpg" alt="TCS" id = "tcslogo3">
+            <div class="text-box">
+                <h2>Magical Accidents and Catastrophes</h2>
+                <small>Jan 2020 - Mar 2020</small>
+                <p>Suprising Miracles</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container right-container">
+            <img src="./assets/timeline-logo.jpg" alt="TCS" id = "gtulogo">
+            <div class="text-box">
+                <h2>Wizards' Council</h2>
+                <small>Aug 2015 - May 2019</small>
+                <p>Board Member</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+        <!-- <img src="./assets/arrow.png" alt="ScrollDown" class="icon arrow" onclick="location.href='./#skillset'"> -->
+    </div>
+
+
+
+<!-- Skillset -->
+    <section id="skillset">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Skillset</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                    <div class="details-container">
+                        <h3 class="experience-sub-title">Backend Development</h3>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Java</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Python</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>SpringBoot</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Django</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>SQL</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h3 class="experience-sub-title">Frontend Development</h3>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>JavaScript</h4>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>HTML</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>CSS</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article> 
+                        </div>
+                    </div>
+            </div>                
+        </div>            
+        <!-- <img src="./assets/arrow.png" alt="ScrollDown" class="icon arrow" onclick="location.href='./#projects'"> -->
+    </section>
+
+    <section id="RelTech">
+        <p class="section__text__p1">Other Relevant</p>
+        <h1 class="title">Concepts & Tools</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                    <div class="details-container">
+                        <h3 class="experience-sub-title">Concepts</h3>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Object<br/>Oriented<br/>Programming</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Data <br/>Structure & <br/>Algorithm</h4>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Agile<br/>Methodology</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>M.V.C., M.V.T.</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Software<br/> Dev Life cycle</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>REST / SOAP<br/>Services</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h3 class="experience-sub-title">Tools</h3>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>VS Code</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Git Control</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Figma</h4>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>WCAG<br/>Report<br/>tool</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article> 
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>WAVE <br/>DevTools</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article> 
+                            <article>
+                                <img src="./assets/checkmark.png" alt="" class="icon">
+                                <div>
+                                    <h4>Axe<br/>DevTools</h4>
+                                    <p>Experienced</p>
+                                </div>
+                            </article> 
+                        </div>
+                    </div>
+            </div>                
+        </div> 
+    </section>
+
+<br/>
+    <!-- projects -->
+    <section id="projects">
+
+        <p class="section__text__p1">Some of my recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/DeveloperCommunity.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-sub-title">
+                        Project 1
+                    </h2>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos blanditiis ducimus illo quod molestiae in fuga pariatur recusandae doloribus</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/CRM.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-sub-title">
+                        Project 2
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos blanditiis ducimus illo quod molestiae in fuga pariatur recusandae doloribus
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/CodingwithCat.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-sub-title">
+                        Project 3
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos blanditiis ducimus illo quod molestiae in fuga pariatur recusandae doloribus
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/'">
+                            GitHub
+                        </button>
+                    </div>
+                </div>
+                <!-- <img src="./assets/arrow.png" alt="ScrollDown" class="icon arrow" onclick="location.href='./#contact'"> -->
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Event_Design.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-sub-title">
+                        Project 4
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos blanditiis ducimus illo quod molestiae in fuga pariatur recusandae doloribus</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://www.canva.com/'">
+                            Source
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/A11yReport.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-sub-title">
+                        Project 5
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos blanditiis ducimus illo quod molestiae in fuga pariatur recusandae doloribus
+
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://drive.google.com'">
+                            Source
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/CPQ.png" alt="Project 6" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-sub-title">
+                        Project 6 <br/>
+                    </h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam eius rerum maiores quos obcaecati ullam consequatur suscipit iste ex cum, aspernatur incidunt doloribus eligendi ut culpa autem minima quaerat. Repellat?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contactMe -->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                alt="Email icon"
+                class="icon contact-icon email-icon">
+                <p><a href="gmail.com">janedoe@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                alt="LinkedIn icon"
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class = "nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#time-line">Education</a></li>
+                    <li><a href="#time-line">Experience</a></li>
+                    <li><a href="#skillset">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Hir Brahmbhatt. All Rights Reserved</p>
+    </footer>
+
+    <script src = "script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings:["Web Developer!"],
+            typeSpeed:60,
+            backSpeed:30,
+            loop:false
+        })
+
+        var icon = document.getElementById("theme-icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")){
+                icon.src = "./assets/dark_theme_enabler/sun.png";
+                icon2.src= "./assets/dark_theme_enabler/sun.png";
+            }else {
+                icon.src = "./assets/dark_theme_enabler/moon.png";
+                icon2.src="./assets/dark_theme_enabler/moon.png";
+            }
+        }
+        var icon2=document.getElementById("theme-icon1");
+        icon2.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")){
+                icon.src = "./assets/dark_theme_enabler/sun.png";
+                icon2.src= "./assets/dark_theme_enabler/sun.png";
+            }else {
+                icon.src = "./assets/dark_theme_enabler/moon.png";
+                icon2.src="./assets/dark_theme_enabler/moon.png";
+            }
+        }
+    </script>
+</body>
+</html>
